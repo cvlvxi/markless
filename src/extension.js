@@ -240,7 +240,7 @@ function bootstrap(context) {
 					color: "transparent",
 					textDecoration: "none; display: inline-block; width: 0;",
 					after: {
-						contentText: checked ? "- ✅" : " - ⭕️",
+						contentText: checked ? "- ✅" : "- ⭕️",
 						fontWeight: "bold"
 					},
 				});
