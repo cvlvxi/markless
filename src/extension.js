@@ -11,6 +11,7 @@ const { getLogger } = require('loglevel');
 let config = vscode.workspace.getConfiguration("markless");
 // const LIST_BULLETS = ["•", "○", "■"];
 const LIST_BULLETS = ["🟩", "🟨", "🟥", "🟦", "🟪", "🟧"];
+// const LIST_BULLETS = ["🟢", "🟡", "🔴", "🔵", "🟣", "🟠"];
 
 function enableLineRevealAsSignature(context) {
     context.subscriptions.push(vscode.languages.registerSignatureHelpProvider('markdown', {
@@ -145,8 +146,8 @@ function bootstrap(context) {
 	state.types = new Map([
 		["heading", ["heading", (() => {
 			const getEnlargeDecoration = memoize((size) => vscode.window.createTextEditorDecorationType({
-				// textDecoration: `; font-size: ${size/2}px; position: relative; top: 0.1em;`,
-				textDecoration: `; position: relative; top: 0.1em;`,
+				textDecoration: `; font-size: ${size/2}px; position: relative; top: 0.1em;`,
+				// textDecoration: `; position: relative; top: 0.1em;`,
 			}));
 			const getlistRainbowDecoration = (() => {
 				const hueRotationMultiplier = [0, 5, 9, 2, 6, 7];
