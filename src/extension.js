@@ -146,7 +146,7 @@ function bootstrap(context) {
 	state.types = new Map([
 		["heading", ["heading", (() => {
 			const getEnlargeDecoration = memoize((size) => vscode.window.createTextEditorDecorationType({
-				textDecoration: `; font-size: ${size/2}px; position: relative; top: 0.1em;`,
+				textDecoration: `; font-size: ${size}px; position: relative; top: 0.1em;`,
 				// textDecoration: `; position: relative; top: 0.1em;`,
 			}));
 			const getlistRainbowDecoration = (() => {
