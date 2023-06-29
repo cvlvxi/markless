@@ -9,8 +9,9 @@ const log = require('loglevel');
 const { getLogger } = require('loglevel');
 
 let config = vscode.workspace.getConfiguration("markless");
-// const LIST_BULLETS = ["•", "○", "■"];
-const LIST_BULLETS = ["🟩", "🟨", "🟥", "🟦", "🟪", "🟧"];
+const LIST_BULLETS = ["•", "○", "■"];
+// const LIST_BULLETS = ["➖", "〰️", "➕", "🟨", "🟥", "🟦", "🟪", "🟧"];
+// const LIST_BULLETS = ["🟩", "🟨", "🟥", "🟦", "🟪", "🟧"];
 // const LIST_BULLETS = ["🟢", "🟡", "🔴", "🔵", "🟣", "🟠"];
 
 function enableLineRevealAsSignature(context) {
